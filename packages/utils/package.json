@@ -1,0 +1,19 @@
+{
+  "name": "@quizzy-match-api/utils",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "vitest": "0.32.2",
+    "@types/node": "20.3.1",
+    "@aws-sdk/types": "3.357.0",
+    "@aws-sdk/smithy-client": "3.358.0"
+  },
+  "dependencies": {
+    "electrodb": "2.6.1",
+    "@aws-sdk/client-dynamodb": "3.359.0",
+    "sst": "2.16.3"
+  }
+}
