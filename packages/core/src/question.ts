@@ -71,6 +71,9 @@ class Question extends BaseDomainItem<QuestionPersistant> {
 }
 export type QuestionDTO = Readonly<Question["dto"]>;
 
+/**Type '{}' is missing the following properties from type 'Readonly<Readonly<ResponseItem<string, string, string, { model: { version: string; entity: EntityName; service: ServiceName; }; attributes: { questionID: { type: "string"; required: true; readOnly: true; }; category: { ...; }; lastUsedAt: { ...; }; }; indexes: { ...; }; }>>>': questionID, category, lastUsedAtts(2739) */
+export const a: QuestionDTO = {};
+
 export class QuestionService implements BaseService<Question> {
   #repository: QuestionRepository;
 
